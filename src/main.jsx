@@ -6,13 +6,10 @@ import Apps from "./Apps.jsx";
 import SecondUserContext, {
   SecondUserContextProvider,
 } from "./hooks/useContext/SecondUserContext.jsx";
+import UseReducer from "./hooks/useReducer/UseReducer.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <SecondUserContextProvider>
-      <UserContextProvider>
-        <Apps />
-      </UserContextProvider>
-    </SecondUserContextProvider>
+    <UseReducer />
   </>
 );
